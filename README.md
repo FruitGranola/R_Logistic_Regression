@@ -1,1 +1,1 @@
-# R_Logistic_Regression
+# 【R】ロジスティック回帰分析
