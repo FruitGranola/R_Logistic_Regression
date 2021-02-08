@@ -1218,6 +1218,24 @@ AIC
 </td>
 </tr>
 </table>
+<p>他の要因を平均値に固定し、変数を1単位増やした場合に得られるOdsは以下の通りだ</p>
+<pre class="r"><code>exp(0.08) # expm</code></pre>
+<pre><code>[1] 1.083287</code></pre>
+<pre class="r"><code>exp(0.57) # previous</code></pre>
+<pre><code>[1] 1.768267</code></pre>
+<pre class="r"><code>exp(2.60) # ldp</code></pre>
+<pre><code>[1] 13.46374</code></pre>
+<pre class="r"><code>exp(-3.94) # constant</code></pre>
+<pre><code>[1] 0.01944821</code></pre>
+<p>他の要因を平均値に固定し、変数を1単位増やした場合に得られる当選確率は以下の通りだ</p>
+<pre class="r"><code>1 / (1 + exp(-(0.08))) # expm</code></pre>
+<pre><code>[1] 0.5199893</code></pre>
+<pre class="r"><code>1 / (1 + exp(-(0.57))) # previous</code></pre>
+<pre><code>[1] 0.6387632</code></pre>
+<pre class="r"><code>1 / (1 + exp(-(2.60))) # ldp</code></pre>
+<pre><code>[1] 0.9308616</code></pre>
+<pre class="r"><code>1 / (1 + exp(-(-3.94))) # constant</code></pre>
+<pre><code>[1] 0.0190772</code></pre>
 </div>
 <div id="モデルの診断" class="section level2">
 <h2>4-2. モデルの診断</h2>
